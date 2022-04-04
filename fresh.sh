@@ -29,11 +29,26 @@ brew bundle --file $DOTFILES/Brewfile
 # Set default MySQL root password and auth type
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 
+# Create directories
+mkdir $HOME/work
+mkdir $HOME/work/snackable
+mkdir $HOME/work/freelance
+mkdir $HOME/work/os
+
 # Clone Github repositories
 $DOTFILES/clone.sh
 
+# Install Ruby gems
+gem install voog-kit
+
 # Symlink the Mackup config file to the home directory
 ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
+
+# Removes gitconfig from $HOME and symlinks the dotfiles one
+rm -rf $HOME/.gitconfig
+ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
+# Adds dotfiles global gitignore to git config
+git config --global core.excludesfile $HOME/.dotfiles/.gitignore_global
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source $DOTFILES/.macos

@@ -1,0 +1,16 @@
+[user]
+	name = Stepan Bolotnikov
+	email = stepan@snackable.ai
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	a = add -p
+	c = commit
+	pause = stash --include-untracked
+	quote-string = "!read -r l; printf \\\"!; printf %s \"$l\" | sed 's/\\([\\\"]\\)/\\\\\\1/g'; printf \" #\\\"\\n\" #"
+	resume = "!git stash list -1 | sed -E 's/^.*WIP on ([^:]+).*$/\\1/' | xargs -n1 git checkout && git stash pop #"
+[push]
+	default = current
+[merge]
+	conflictstyle = diff3

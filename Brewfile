@@ -14,6 +14,7 @@ brew 'mackup'
 # Development
 brew 'mysql'
 brew 'node'
+brew 'ruby'
 
 # Apps
 # Comms
