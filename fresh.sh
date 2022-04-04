@@ -41,9 +41,6 @@ $DOTFILES/clone.sh
 # Install Ruby gems
 gem install voog-kit
 
-# Symlink the Mackup config file to the home directory
-ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
-
 # Removes gitconfig from $HOME and symlinks the dotfiles one
 rm -rf $HOME/.gitconfig
 ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
