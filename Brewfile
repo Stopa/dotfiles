@@ -14,6 +14,7 @@ brew 'git'
 brew 'mysql'
 brew 'node'
 brew 'ruby'
+brew 'nvm'
 
 # Apps
 # Comms
