@@ -43,7 +43,7 @@ If you did all of the above you may now follow these install instructions to set
 
 5. Restart your computer to finalize the process
 
-6. Have fun logging into all the apps! Firefox and Webstorm settings are synced through respective accounts.
+6. Have fun logging into all the apps! Firefox settings are synced through respective accounts. Webstorms settings are kept in the [Settings Repository](https://github.com/stopa/webstorm-settings)
 
 Your Mac is now ready to use!
 
