@@ -10,6 +10,7 @@
 	pause = stash --include-untracked
 	quote-string = "!read -r l; printf \\\"!; printf %s \"$l\" | sed 's/\\([\\\"]\\)/\\\\\\1/g'; printf \" #\\\"\\n\" #"
 	resume = "!git stash list -1 | sed -E 's/^.*WIP on ([^:]+).*$/\\1/' | xargs -n1 git checkout && git stash pop #"
+	pq = "push --no-verify"
 [push]
 	default = current
 [merge]
