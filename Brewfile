@@ -36,7 +36,6 @@ cask 'iterm2'
 cask 'notion'
 brew 'thefuck'
 # Entertainment
-cask 'spotify'
 cask 'minecraft'
 cask 'steam'
 brew 'brogue'

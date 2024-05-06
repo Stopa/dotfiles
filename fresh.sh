@@ -31,15 +31,11 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 
 # Create directories
 mkdir $HOME/work
-mkdir $HOME/work/snackable
 mkdir $HOME/work/freelance
 mkdir $HOME/work/os
 
 # Clone Github repositories
 ./clone.sh
-
-# Install Ruby gems
-gem install voog-kit
 
 # Removes gitconfig from $HOME and symlinks the dotfiles one
 rm -rf $HOME/.gitconfig
