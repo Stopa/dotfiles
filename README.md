@@ -32,7 +32,7 @@ If you did all of the above you may now follow these install instructions to set
 3. Clone this repo to `~/.dotfiles` and go to the directory:
 
     ```zsh
-    git clone git@github.com:stopa/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
+    git clone --recursive git@github.com:stopa/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
     ```
 
 4. Run the installation with:
@@ -62,3 +62,15 @@ Your Mac is now ready to use!
 9. A whole bunch of macOS settings are [set](./fresh.sh#L50) (see [.macos file](./.macos))
 
 > ❗ Some of the macos defaults seem to not be working, which I'll attribute to them being semi-secret menu items anyway.
+
+## FAQ
+
+### How do I add zsh plugins/themes?
+
+Add the repository of the plugin/theme as a git sumodule under `.dotfiles/plugins` or `.dotfiles/themes`:
+
+   ```zsh
+   git submodule add <repository-url> plugins/<plugin-name>
+   ```
+
+And then modify `plugins` or `ZSH_THEME` acordingly in `.zshrc`.

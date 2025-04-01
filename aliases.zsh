@@ -7,11 +7,16 @@ alias c="clear"
 alias pls="sudo"
 alias kp="npx kill-port"
 eval $(thefuck --alias)
+alias auth="okta-artifactory-login"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias wd="cd $HOME/work/snackable/portal"
+alias splunk='$SPLUNK_HOME/bin/splunk'
+alias sui="cd $HOME/work/splunk/splunk-ui"
+alias a11y="cd $HOME/work/splunk/a11y"
+alias udf="cd $HOME/work/dashboard-framework"
+alias viz="cd $HOME/work/vision"
 
 # JS
 alias sq1="rm -rf node_modules && npm i"

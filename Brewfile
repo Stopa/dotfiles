@@ -35,6 +35,7 @@ cask 'figma'
 cask 'iterm2'
 cask 'notion'
 brew 'thefuck'
+brew 'asciinema'
 # Entertainment
 cask 'minecraft'
 cask 'steam'
