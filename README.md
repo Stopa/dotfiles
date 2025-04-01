@@ -57,8 +57,8 @@ Your Mac is now ready to use!
 4. A whole bunch of tools and applications are [installed](./fresh.sh#L25) from Homebrew (see the [Brewfile](./Brewfile))
 5. Defaults MySQL password is [set](./fresh.sh#L29)
 6. Some useful directories are [created](./fresh.sh#L32) and a bunch of git repos [cloned](./clone.sh) into them
-8. Git config from this repo is [symlinked](./fresh.sh#L40) to the system one, global gitignore is applied
-9. A whole bunch of macOS settings are [set](./fresh.sh#L47) (see [.macos file](./.macos))
+7. Git config from this repo is [symlinked](./fresh.sh#L40) to the system one, global gitignore is applied
+8. A whole bunch of macOS settings are [set](./fresh.sh#L47) (see [.macos file](./.macos))
 
 > ❗ Some of the macos defaults seem to not be working, which I'll attribute to them being semi-secret menu items anyway.
 
