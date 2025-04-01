@@ -13,7 +13,6 @@ brew 'git'
 # Development
 brew 'mysql'
 brew 'node'
-brew 'ruby'
 brew 'nvm'
 
 # Apps
