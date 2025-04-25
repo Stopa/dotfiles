@@ -12,11 +12,12 @@ alias auth="okta-artifactory-login"
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias splunk='$SPLUNK_HOME/bin/splunk'
-alias sui="cd $HOME/work/splunk/splunk-ui"
-alias a11y="cd $HOME/work/splunk/a11y"
-alias udf="cd $HOME/work/dashboard-framework"
-alias viz="cd $HOME/work/vision"
+alias splunk="$SPLUNK_HOME/bin/splunk"
+export SPLUNK_WORK="$HOME/work/splunk"
+alias sui="cd $SPLUNK_WORK/splunk-ui"
+alias a11y="cd $SPLUNK_WORK/a11y"
+alias udf="cd $SPLUNK_WORK/dashboard-framework"
+alias viz="cd $SPLUNK_WORK/vision"
 
 # JS
 alias sq1="rm -rf node_modules && npm i"
