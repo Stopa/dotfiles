@@ -17,6 +17,11 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
+# Decrease space between icons in menu bar
+# https://flaky.build/built-in-workaround-for-applications-hiding-under-the-macbook-pro-notch
+defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 0
+defaults -currentHost write -globalDomain NSStatusItemSpacing -int 0
+
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
