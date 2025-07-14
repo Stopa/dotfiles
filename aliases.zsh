@@ -22,6 +22,7 @@ alias viz="cd $SPLUNK_WORK/vision"
 # JS
 alias sq1="rm -rf node_modules && npm i"
 alias nrd="npm run dev"
+alias nsu='nvm use && yarn install && yarn setup'
 
 # Git
 alias gst="git status"
